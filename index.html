@@ -7,25 +7,110 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title> MJM Training </title>
 </head>
 
 <body>
 
-  <header>
+  <div class="header">
+    <img src="img/mjmlogo.svg" alt="MJM LOGO" width="150" height="150">
+    <p style="color: #F5824A; font-family: Assistant; font-weight: 400">LEARNING FOR THE FUTURE</p>
+  </div>
 
-  </header>
+  <div id="navbar">
+    <a class="active" href="javascript:void(0)">Home</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0)">Training</a>
+    <a href="#contact">Contact</a>
+  </div>
+
   <main>
-    <div class="container333">
-        <picture>
-          <source srcset="img/comingsoon.svg" media="(max-width:767px)">
-          <img src="img/comingsoon.svg" alt="Landing Image">
-        </picture>
+    <div class="text image overlay content" style="background-image: url(img/training.jpg); background-size: 100%; background-repeat: no-repeat">
+      <div class="hero_container">
+        <h2 style="font-weight: 400; font-size: 50px; letter-spacing: 5px">MJM Training</h2>
+        <h3 style="font-weight: 400; font-size: 22px">Learning for the Future</h3>
+        <hr>
+        <p style="font-weight: 200; font-size: 20px; line-height: 1.5">MJM Training provides training for direct care staff working in group homes, STRTP’s, or with the developmentally disabled population. Our vision is to bring inspiration and
+          innovation to every
+          direct care staff in the Central Valley and throughout California.</p>
+        <a href="#about" class="button">Learn More</a>
+      </div>
     </div>
+
+    <div id="about" class="text image overlay2 content">
+      <div class="container">
+        <h2 style="font-weight: 400; font-size: 50px; letter-spacing: 5px; color: #F5824A">About MJM Training</h2>
+        <p style="font-weight: 200; font-size: 20px; line-height: 1.5; color: #4A4A4A">We believe that every direct care staff member bears something unique within themselves. MJM Training will help develop and cultivate the uniqueness within.</p>
+        <p style="font-weight: 200; font-size: 20px; line-height: 1.5; color: #4A4A4A">Our mission is to deliver training services that help direct care staff members reach their full potential safely, happily, and successfully with the desire to
+          enhance their career path.</p>
+        <p style="font-weight: 200; font-size: 20px; line-height: 1.5; color: #4A4A4A">Training is required to help every staff member become better qualified to work with children, adolescents, adults, and individuals with varying circumstantial
+          backgrounds.</p>
+        <p style="font-weight: 200; font-size: 20px; line-height: 1.5; color: #4A4A4A">Our goal is to provide “Learning For The Future”</p>
+        <a href="#training" class="button2">Training Courses</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 style="font-weight: 400; font-size: 50px; letter-spacing: 5px; color: #F5824A">Meet Trena Dixon</h2>
+          <p style="font-weight: 200; font-size: 20px; line-height: 1.5; color: #4A4A4A">CEO and Founder of MJM Training, Trena Dixon has 28 years of experience working in group homes and counseling disadvantaged youth. She holds a Bachelor of
+            Science in Human Services, is certified in Computer Business and has held an Administrator's Certificate and worked as an administrator in the state of California, for 24 years.</p>
+          <p style="font-weight: 200; font-size: 20px; line-height: 1.5; color: #4A4A4A">Mrs. Dixon is currently the Program Coordinator and Corporate Trainer at a STRTP facility in Fresno. She previously worked as the Program Director for an adult
+            day program where she coordinated and developed the training curriculums.</p>
+          <p style="font-weight: 200; font-size: 20px; line-height: 1.5; color: #4A4A4A">With a wealth of the knowledge and multiple years of experience, Trena will provide your direct care staff and facility managers with the necessary tools to
+            reach their full potential safely, happily, and successfully with the desire to enhance their career path while <span style="font-weight: 400"><i>“Learning For The Future.”</i></span></p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/trena.jpg" alt="Meet Trena">
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="text2 overlay2">
+      <div class="container">
+        <h2 style="font-weight: 400; font-size: 50px; letter-spacing: 1px; color: #F5824A; text-align: center">Interested in working with MJM Training?</h2>
+        <p style="font-weight: 200; font-size: 20px; line-height: 1.5; color: #4A4A4A; text-align: center">Contact us for more information about training, registration, pricing, and trainings of
+          your choice.</p>
+        <hr>
+        <form action="https://formspree.io/mjmtraining0619@gmail.com" method="post">
+
+          <label for="name" style="font-weight:200; font-size: 20px">Your Name</label>
+          <input type="text" id="name" name="name" style="height:35px">
+
+          <label for="email" style="font-weight:200; font-size: 20px">Your Email</label>
+          <input type="text" id="email" name="email" style="height:35px">
+
+          <label for="subject" style="font-weight:200; font-size: 20px" >Subject</label>
+          <input type="text" id="subject" name="subject" style="height:35px">
+
+          <label for="message" style="font-weight:200; font-size: 20px">Message</label>
+          <textarea id="message" name="subject" style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+    </div>
+
   </main>
 
+  <footer>
+      <div class="social-icons">
+        <a target="_blank" href="https://www.linkedin.com/in/trenadixon/"><i class="fab fa-linkedin-in"></i></a>
+        <a target="_blank" href="https://www.instagram.com/trenadixon/"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:mjmtraining0619@gmail.com"><i class="far fa-envelope"></i></a>
+        <p>
+          <span style="font-size: 14px;">&copy;</span>
+          <span style="font-size:15px; font-family: Assistant;">MJM Training 2019. All Rights Reserved.</span>
+        </p>
+      </div>
 
+
+
+    </footer>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/scripts.js"> </script>
